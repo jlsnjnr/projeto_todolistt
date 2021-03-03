@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    font-size: 62.5%;
+} 
+
+body, input, button, textarea {
+    font: 400 1.8rem/1 'Ubuntu', sans-serif;
+    background: #4e54c8; 
+    background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8); 
+    background: linear-gradient(to right, #8f94fb, #4e54c8);
+}
+
+#page-landing {
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+}
+
+#container {
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+}
+
+main h1,
+p,
+img,
+a {
+    margin-top: 5rem;
+}
+
+.visit img {
+    margin: auto;
+    display: block;
+    max-width: clamp(30rem, 54vw, 56rem);
+    margin-top: 5rem;
+}
+
+#container button {
+    width: 20rem;
+    height: 5rem;
+
+    background: transparent;
+    border: 0;
+
+    color: white; 
+    cursor: pointer;
+
+    border: 1px solid white;
+    border-radius: 20px;
+
+    margin-top: 4rem;
+}
+
+/* desktop */
+
+@media (min-width: 768px) { 
+
+    .visit img {
+        display: none;
+    }
+
+    #container {
+        background: url("../images/bg-index.svg") no-repeat 100% / clamp(30rem, 54vw, 56rem);
+    }
+
+    h1, .visit p {
+        height: initial;
+        text-align: initial;
+    }
+
+    main h1 {
+        font-weight: bold;
+        font-size: 5rem;
+        line-height: .88;
+
+        margin: clamp(10%, 9vh, 12%) 0 4rem;
+
+        width: min(300px, 80%);
+    }
+
+    .visit p {
+        font-size: 2rem;
+        line-height: 1.2;
+        font-weight: 400;
+        width: clamp(20rem, 20vw, 30rem);
+    }
+
+    .visit {
+        display: flex;
+        flex-direction: column;
+    }
+
+}

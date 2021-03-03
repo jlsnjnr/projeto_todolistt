@@ -1,0 +1,8 @@
+@media (min-width: 768px) { 
+
+      .image {
+        background: url("../images/bg-create-account.svg") no-repeat 70% / clamp(30rem, 54vw, 56rem);
+      }
+
+
+}

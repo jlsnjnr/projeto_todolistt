@@ -1,0 +1,92 @@
+body {
+    background: white;
+}
+
+.column {
+    padding: 10px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+.column h2 {
+    color: #2e2e2e;
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: .8rem;
+}
+
+.input-block input[type=text],
+.input-block input[type=password] {
+    margin-bottom: .2rem;
+    width: 40rem;
+    height: 4rem;
+    border: 1px solid rgb(243, 243, 243);
+    background: white;
+    border-radius: 1.4rem;
+    padding-left: 1.2rem;
+    font-size: 1.4rem;
+}
+
+.btn-grad {background-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%)}
+
+.btn-grad {
+    margin: 1rem auto;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;           
+    border-radius: 10px;
+    display: block;
+    border: 0;
+    width: 20rem;
+    height: 4rem;
+}
+
+.btn-grad:hover {
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+}
+
+.create-login {
+    text-align: center;
+}
+
+.create-login a {
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.create-login a:hover {
+    text-decoration: underline;
+    transition: 0.5s;
+}
+      
+@media (min-width: 768px) { 
+
+    .column {
+        float: left;
+        width: 50%;
+        padding: 1rem;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;    
+      }
+      
+      .image {
+        background: url("../images/bg-login.svg") no-repeat 80% / clamp(30rem, 54vw, 56rem);
+      }
+      
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+}

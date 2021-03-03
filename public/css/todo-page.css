@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.w20 {
+    width: 20%;
+}
+
+.left {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.container {
+    padding: 1.5rem;
+}
+
+header img {
+    max-width: 4rem;
+    border-radius: 50%;
+}
+
+header h3 {
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+/*  */
+
+
+.projects > h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #212121;
+}
+
+section.projects {
+    padding: 1.5rem;
+}
+
+section.projects .projects-flex {
+	width: 96%;
+	margin-left: 4%;
+	position: relative;
+	z-index: 4;
+}
+
+.projects-single-banner {
+    width: 100%;
+    height: 8rem;
+	padding-top: calc(16.6% / 2);
+	float: left;
+    position: relative;
+    background-image: radial-gradient( circle 966px at 6.9% 10.8%,  rgba(92,123,237,1) 0%, rgba(147,186,252,1) 90% );
+    border-right: 4px solid white;
+    color: white;
+}
+
+.projects-single-banner h2, p {
+    padding-top: .1rem;
+    padding-left: .4rem;
+}
+
+.projects-single-banner h2 {
+    font-size: 1.2rem;
+}
+
+.projects-single-banner p {
+    font-size: .8rem;
+}
+
+/*  */
+
+.app h2{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #212121;
+}
+
+.tasks {
+    margin-top: 1.3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+
+}
